@@ -1,12 +1,16 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import './app.css';
-import './app.animations.css';
-
-import 'jquery/dist/jquery.js';
-import 'angular/angular.js';
-import 'angular-animate/angular-animate.js';
-import 'angular-resource/angular-resource.js';
-import 'angular-route/angular-route.js';
+// lib
+import 'jquery';
+import 'angular';
+import 'angular-animate';
+import 'angular-sanitize';
+import 'angular-resource';
+import 'angular-route';
+// import 'jquery/dist/jquery.js';
+// import 'angular/angular.js';
+// import 'angular-animate/angular-animate.js';
+// import 'angular-resource/angular-resource.js';
+// import 'angular-route/angular-route.js';
+// app
 import './app.module.js';
 import './app.config.js';
 import './app.animations.js';

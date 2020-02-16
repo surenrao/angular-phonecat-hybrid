@@ -1,1 +1,4 @@
 /* Add application styles & imports to this file! */
+@import 'bootstrap/dist/css/bootstrap.css';
+@import './ng1-app/app.css';
+@import './ng1-app/app.animations.css';
