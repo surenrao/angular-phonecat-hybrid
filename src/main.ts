@@ -1,4 +1,6 @@
 import './polyfills';
+//importing angular 1 app
+import './ng1-app/index';
 
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
