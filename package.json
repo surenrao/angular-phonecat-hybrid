@@ -14,10 +14,13 @@
     "core-js": "2",
     "rxjs": "^6.5.2",
     "zone.js": "^0.9.1",
+    "web-animations-js": "2.3.2",
+    "tslib": "1.10.0",
 	  "angular": "1.7.x",
     "angular-animate": "1.7.x",
     "angular-resource": "1.7.x",
     "angular-route": "1.7.x",
+    "angular-sanitize": "^1.7.9",
     "bootstrap": "3.3.x",
     "jquery": "3.3.x"
   },

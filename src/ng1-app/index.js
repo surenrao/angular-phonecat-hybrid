@@ -1,5 +1,5 @@
 // lib
-import 'jquery';
+// import 'jquery';
 import 'angular';
 import 'angular-animate';
 import 'angular-sanitize';
