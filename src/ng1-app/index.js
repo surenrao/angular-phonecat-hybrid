@@ -24,3 +24,5 @@ window.jQuery = $;
 $(document).ready(()=>{
     console.log('jquery is loaded!');
 });
+// ng2+ components and services downgraded to ng1
+import './downgrade-ng2.js';

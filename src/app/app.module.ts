@@ -11,6 +11,7 @@ import { HelloComponent } from './hello.component';
 @NgModule({
   imports: [BrowserModule, UpgradeModule, FormsModule, ReactiveFormsModule, HttpClientModule],
   declarations: [AppComponent, HelloComponent],
+  entryComponents: [ HelloComponent ]
   // bootstrap:    [ AppComponent ]
 })
 export class AppModule {
@@ -19,7 +20,6 @@ export class AppModule {
   }
 
   public ngDoBootstrap() {
-    this.upgrade.bootstrap(document.body, ['phonecatApp'], { strictDi: false }
-    );
+    this.upgrade.bootstrap(document.body, ['phonecatApp'], { strictDi: false });
   }
 }
