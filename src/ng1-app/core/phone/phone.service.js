@@ -3,7 +3,10 @@
 angular.
   module('core.phone').
   factory('Phone', ['$resource',
-    function($resource) {
+    PhoneFactory
+  ]);
+
+export function PhoneFactory($resource) {
       return $resource('/assets/phones/:phoneId.json', {}, {
         query: {
           method: 'GET',
@@ -12,4 +15,3 @@ angular.
         }
       });
     }
-  ]);

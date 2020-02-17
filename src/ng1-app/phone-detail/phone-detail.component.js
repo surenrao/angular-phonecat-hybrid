@@ -3,12 +3,14 @@
 // Register `phoneDetail` component, along with its associated controller and template
 angular.
   module('phoneDetail').
-  component('phoneDetail', {
+  component('phoneOldDetail', {
     template: require('./phone-detail.template.html'),
     controller: ['$routeParams', 'Phone',
       function PhoneDetailController($routeParams, Phone) {
         var self = this;
-        self.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
+        self.phone =
+        Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
+          console.log('ng1 phoneOldDetail',phone);
           self.setImage(phone.images[0]);
         });
 

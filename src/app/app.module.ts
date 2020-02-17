@@ -8,11 +8,31 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { TestFormComponent } from './test-form/test-form.component';
+import { PhoneDetailComponent } from './phone-detail/phone-detail.component';
+
+import { CheckmarkPipe } from './pipes/checkmark.pipe';
+
+import { 
+  phoneServiceProvider, 
+  $resourceProvider, 
+  $routeParamsProvider 
+} from './upgrade-ng1/phone.service';
 
 @NgModule({
   imports: [BrowserModule, UpgradeModule, FormsModule, ReactiveFormsModule, HttpClientModule],
-  declarations: [AppComponent, HelloComponent, TestFormComponent],
-  entryComponents: [ HelloComponent, TestFormComponent ]
+  declarations: [
+    AppComponent, 
+    HelloComponent, 
+    TestFormComponent,
+    PhoneDetailComponent,
+    CheckmarkPipe
+    ],
+  providers:[ 
+    $resourceProvider, 
+    $routeParamsProvider, 
+    phoneServiceProvider,
+    ],
+  entryComponents: [ HelloComponent, TestFormComponent, PhoneDetailComponent ]
   // bootstrap:    [ AppComponent ]
 })
 export class AppModule {
