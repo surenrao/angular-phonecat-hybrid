@@ -1,3 +1,3 @@
-# angular-gu3nax
+# angular-phonecat-hybrid
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-gu3nax)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-phonecat-hybrid)
