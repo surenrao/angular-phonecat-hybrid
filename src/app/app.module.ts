@@ -7,16 +7,17 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { TestFormComponent } from './test-form/test-form.component';
 
 @NgModule({
   imports: [BrowserModule, UpgradeModule, FormsModule, ReactiveFormsModule, HttpClientModule],
-  declarations: [AppComponent, HelloComponent],
-  entryComponents: [ HelloComponent ]
+  declarations: [AppComponent, HelloComponent, TestFormComponent],
+  entryComponents: [ HelloComponent, TestFormComponent ]
   // bootstrap:    [ AppComponent ]
 })
 export class AppModule {
   constructor(private upgrade: UpgradeModule) {
-    console.log('Angular 8 is running!');
+    console.log('Angular 9 is running!');
   }
 
   public ngDoBootstrap() {

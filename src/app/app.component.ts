@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-// import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'my-app',
@@ -8,5 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
-  // firstName = new FormControl('');
 }
