@@ -2,7 +2,7 @@
 
 angular.
   module('phonecatApp').
-  animation('.phone', function phoneAnimationFactory() {
+  animation('.phone', function phoneAnimationFactory($animate) {
     return {
       addClass: animateIn,
       removeClass: animateOut
@@ -16,7 +16,8 @@ angular.
         position: 'absolute',
         top: 500,
         left: 0
-      }).animate({
+      });
+      $(element).animate({
         top: 0
       }, done);
 
@@ -32,7 +33,8 @@ angular.
         position: 'absolute',
         top: 0,
         left: 0
-      }).animate({
+      });
+      $(element).animate({
         top: -500
       }, done);
 

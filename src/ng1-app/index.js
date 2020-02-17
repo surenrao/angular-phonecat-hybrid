@@ -1,15 +1,11 @@
 // lib
-// import 'jquery';
+import $ from 'jquery';
 import 'angular';
 import 'angular-animate';
 import 'angular-sanitize';
 import 'angular-resource';
 import 'angular-route';
-// import 'jquery/dist/jquery.js';
-// import 'angular/angular.js';
-// import 'angular-animate/angular-animate.js';
-// import 'angular-resource/angular-resource.js';
-// import 'angular-route/angular-route.js';
+
 // app
 import './app.module.js';
 import './app.config.js';
@@ -22,3 +18,9 @@ import './phone-list/phone-list.module.js';
 import './phone-list/phone-list.component.js';
 import './phone-detail/phone-detail.module.js';
 import './phone-detail/phone-detail.component.js';
+
+window.$ = $;
+window.jQuery = $;
+$(document).ready(()=>{
+    console.log('jquery is loaded!');
+});
