@@ -16,7 +16,7 @@
     "angular-resource": "^1.7.9",
     "angular-route": "^1.7.9",
     "angular-sanitize": "^1.7.9",
-    "bootstrap": "4.4.1",
+    "bootstrap": "3.3.7s",
     "core-js": "2.6.11",
     "jquery": "3.4.1",
     "popper.js": "1.16.1",
