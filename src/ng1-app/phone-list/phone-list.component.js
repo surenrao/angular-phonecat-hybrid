@@ -4,6 +4,7 @@
 angular.
   module('phoneList').
   component('phoneList', {
+    // can use assets glob pattern to copy all *.html to output since angular-cli complains about ng1 code i
     templateUrl: './phone-list.template.html',
     controller: ['PhoneService',
       function PhoneListController(PhoneService) {
