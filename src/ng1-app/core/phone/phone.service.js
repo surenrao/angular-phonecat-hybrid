@@ -7,11 +7,11 @@ angular.
   ]);
 
 export function PhoneFactory($resource) {
-      return $resource('/assets/phones/:phoneId.json', {}, {
-        query: {
-          method: 'GET',
-          params: {phoneId: 'phones'},
-          isArray: true
-        }
-      });
+  return $resource('/assets/phones/:phoneId.json', {}, {
+    query: {
+      method: 'GET',
+      params: {phoneId: 'phones'},
+      isArray: true
     }
+  });
+}

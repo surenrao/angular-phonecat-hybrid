@@ -11,27 +11,35 @@ import { TestFormComponent } from './test-form/test-form.component';
 import { PhoneDetailComponent } from './phone-detail/phone-detail.component';
 
 import { CheckmarkPipe } from './pipes/checkmark.pipe';
+import { PhoneService } from './services/phone.service';
 
 import { 
   phoneServiceProvider, 
   $resourceProvider, 
   $routeParamsProvider 
-} from './upgrade-ng1/u.service';
+} from './upgrade-ng1/upgrade.service';
 
 @NgModule({
-  imports: [BrowserModule, UpgradeModule, FormsModule, ReactiveFormsModule, HttpClientModule],
+  imports: [
+    BrowserModule, 
+    UpgradeModule, 
+    FormsModule, 
+    ReactiveFormsModule, 
+    HttpClientModule
+    ],
   declarations: [
     AppComponent, 
     HelloComponent, 
     TestFormComponent,
     PhoneDetailComponent,
     CheckmarkPipe
-    ],
+  ],
   providers:[ 
+    PhoneService,
     $resourceProvider, 
     $routeParamsProvider, 
     phoneServiceProvider,
-    ],
+  ],
   entryComponents: [ HelloComponent, TestFormComponent, PhoneDetailComponent ]
   // bootstrap:    [ AppComponent ]
 })
