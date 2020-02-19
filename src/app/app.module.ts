@@ -26,7 +26,7 @@ import {
     FormsModule, 
     ReactiveFormsModule, 
     HttpClientModule
-    ],
+  ],
   declarations: [
     AppComponent, 
     HelloComponent, 

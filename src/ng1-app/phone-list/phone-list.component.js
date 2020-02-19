@@ -5,9 +5,12 @@ angular.
   module('phoneList').
   component('phoneList', {
     templateUrl: './phone-list.template.html',
-    controller: ['Phone',
-      function PhoneListController(Phone) {
-        this.phones = Phone.query();
+    controller: ['PhoneService',
+      function PhoneListController(PhoneService) {
+        PhoneService.query().subscribe(o => {
+          console.log('Calling ng9 service from ng1');
+          this.phones = o;
+        });
         this.orderProp = 'age';
       }
     ]

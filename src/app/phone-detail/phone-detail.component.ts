@@ -17,6 +17,7 @@ export class PhoneDetailComponent implements OnInit  {
   ngOnInit() {
     this.phone = this.phoneSvc.get({phoneId: this.$routeParams.phoneId}, 
       (phone) => {
+        console.log('Calling ng1 service from ng9 component');
         this.setImage(phone.images[0]);
       });
   }
