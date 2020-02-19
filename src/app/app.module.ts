@@ -16,7 +16,7 @@ import {
   phoneServiceProvider, 
   $resourceProvider, 
   $routeParamsProvider 
-} from './upgrade-ng1/phone.service';
+} from './upgrade-ng1/u.service';
 
 @NgModule({
   imports: [BrowserModule, UpgradeModule, FormsModule, ReactiveFormsModule, HttpClientModule],
