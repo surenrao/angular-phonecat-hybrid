@@ -19,7 +19,7 @@
     </div>
     <div class="col-md-10">
       <!--Body content-->
-      <hello [name]="'This is Angular9 Component inside Angularjs page'"></hello>
+      <hello [name]="'This is Angular9 Component inside Angularjs page'" (clicked)="console.log('Clicked', $e)"></hello>
       <ul class="phones">
         <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp"
             class="thumbnail phone-list-item">

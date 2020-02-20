@@ -13,6 +13,9 @@ angular.
           this.phones = o;
         });
         this.orderProp = 'age';
+        this.onClicked = function(e) {
+          console.log('Clicked', e);
+        }
       }
     ]
   });
